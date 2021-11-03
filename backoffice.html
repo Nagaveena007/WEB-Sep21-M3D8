@@ -19,8 +19,8 @@
     <title>BackOffice</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <a class="navbar-brand" href="./index.html">Strivazon</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -157,6 +157,11 @@
         } catch (e) {
           alert(e);
         }
+      };
+
+      window.onload = () => {
+        const form = document.querySelector("form");
+        form.onsubmit = handleSubmit;
       };
     </script>
 
